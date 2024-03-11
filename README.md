@@ -21,7 +21,7 @@
 
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
-| Cátedra     | Lunes 11/03  | [Slides](Material%20de%20clases/Capítulo%200/Slides/1%20-%20Introducción.pdf) - Ejercicio - Ticket |
+| Cátedra     | Lunes 11/03  | [Slides](Material%20de%20clases/Capítulo%200/Slides/1%20-%20Introducción.pdf) - Ejercicio - [Ticket](https://forms.gle/s5SsGzf2vmfBx8ws6) |
 | Ayudantía   | Jueves 14/03 |  | 
 </details>
 
