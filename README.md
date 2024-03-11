@@ -2,8 +2,6 @@
 
 ## Evaluación
 
-## Evaluación
-
 1. Las evaluaciones serán efectuadas por medio de laboratorios y participación en clases. Se calculará la nota del curso **N** como:
 
     **N = 0,8 x L + 0,2 x P**
