@@ -16,7 +16,7 @@
 
 ## Calendario 
 
-<details open>
+<details>
 <summary>Capítulo 0: Introducción</summary>
 
 | Instancia   | Fecha        | Recursos |
@@ -26,12 +26,12 @@
 </details>
 
 
-<details>
+<details open>
 <summary>Capítulo 1: Fundamentos </summary>
 
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
-| Cátedra     | Lunes 18/03  | Slides - Materia - Ejercicio - Ticket |
+| Cátedra     | Lunes 18/03  | Slides - [Materia](Material%20de%20clases/Cap%C3%ADtulo%201/Notebooks) - Ejercicio - Ticket |
 | Ayudantía   | Jueves 21/03 | Slides - Código |
 </details>
 
