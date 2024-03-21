@@ -13,9 +13,9 @@
         - [Persona](#persona)
         - [Trabajador](#trabajador)
     - [Crear objetos](#crear-objetos)
-        - [Objeto Trabajador](#objeto-trabajador)
-        - [Objeto OrganizacionPublica](#objeto-organizacionpublica)
-        - [Objeto OrganizacionPrivada](#objeto-organizacionprivada)
+        - [Objetos Trabajador](#objetos-trabajador)
+        - [Objetos OrganizacionPublica](#objetos-organizacionpublica)
+        - [Objetos OrganizacionPrivada](#objetos-organizacionprivada)
     - [Guardar objetos en lista y diccionario](#guardar-objetos-en-lista-y-diccionario)
 
 
