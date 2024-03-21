@@ -19,6 +19,7 @@
         - [Objetos de clase OrganizacionPrivada](#objetos-de-clase-organizacionprivada)
     - [Guardar objetos en lista y diccionario](#guardar-objetos-en-lista-y-diccionario)
 - [Pregunta sobre tiempo de búsqueda en lista y diccionario](#pregunta-sobre-tiempo-de-búsqueda-en-lista-y-diccionario)
+- [Cumplimiento de los requerimientos del enunciado](#cumplimiento-de-los-requerimientos-del-enunciado)
 
 
 
