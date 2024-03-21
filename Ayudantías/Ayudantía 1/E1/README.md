@@ -181,7 +181,7 @@ En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hered
 
 ### Crear objetos
 
-- Objeto **Trabajador**
+- Objetos **Trabajador**
 
     ```python
     trabajador_1 = Trabajador("Juan", "Perez", "12345678-9", 400000)
@@ -208,7 +208,7 @@ En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hered
 
     En este fragmento de código se crean 5 listas, cada una de ellas contiene 2 objetos de la clase **Trabajador**. Esto para que cada una de las listas sea asignada a una organización.
 
-- Objeto **OrganizacionPublica**
+- Objetos **OrganizacionPublica**
 
     ```python
     ministerio_salud_chile = OrganizacionPublica("Ministerio de Salud", lista_1, 60000000, 3000000, 40000000, "alto")
@@ -225,7 +225,7 @@ En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hered
 
     En este fragmento de código se crean 10 objetos de la clase **OrganizacionPublica**. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
 
-- Objeto **OrganizacionPrivada**
+- Objetos **OrganizacionPrivada**
 
     ```python
     banco_de_chile = OrganizacionPrivada("Banco de Chile", lista_1,  80000000, 5000000, 50000000, True)
@@ -245,7 +245,7 @@ En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hered
     latam = OrganizacionPrivada("Latam", lista_5, 80000000, 5000000, 50000000, False)
     ```
 
-    En este fragmento de código se crean 5 objetos de la clase **OrganizacionPrivada**. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
+    En este fragmento de código se crean 15 objetos de la clase **OrganizacionPrivada**. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
 
 ### Guardar objetos en lista y diccionario
 
