@@ -14,11 +14,13 @@
         - [Persona](#persona)
         - [Trabajador](#trabajador)
     - [Crear objetos](#crear-objetos)
-        - [Objetos Trabajador](#objetos-trabajador)
-        - [Objetos OrganizacionPublica](#objetos-organizacionpublica)
-        - [Objetos OrganizacionPrivada](#objetos-organizacionprivada)
+        - [Objetos de clase Trabajador](#objetos-de-clase-trabajador)
+        - [Objetos de clase OrganizacionPublica](#objetos-de-clase-organizacionpublica)
+        - [Objetos de clase OrganizacionPrivada](#objetos-de-clase-organizacionprivada)
     - [Guardar objetos en lista y diccionario](#guardar-objetos-en-lista-y-diccionario)
 - [Pregunta sobre tiempo de búsqueda en lista y diccionario](#pregunta-sobre-tiempo-de-búsqueda-en-lista-y-diccionario)
+
+
 
 
 ## Tema
@@ -183,7 +185,7 @@ En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hered
 
 ### Crear objetos
 
-- Objetos **Trabajador**
+#### Objetos Trabajador
 
     ```python
     trabajador_1 = Trabajador("Juan", "Perez", "12345678-9", 400000)
@@ -210,7 +212,7 @@ En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hered
 
     En este fragmento de código se crean 5 listas, cada una de ellas contiene 2 objetos de la clase **Trabajador**. Esto para que cada una de las listas sea asignada a una organización.
 
-- Objetos **OrganizacionPublica**
+#### Objetos OrganizacionPublica
 
     ```python
     ministerio_salud_chile = OrganizacionPublica("Ministerio de Salud", lista_1, 60000000, 3000000, 40000000, "alto")
@@ -227,7 +229,7 @@ En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hered
 
     En este fragmento de código se crean 10 objetos de la clase **OrganizacionPublica**. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
 
-- Objetos **OrganizacionPrivada**
+#### Objetos OrganizacionPrivada
 
     ```python
     banco_de_chile = OrganizacionPrivada("Banco de Chile", lista_1,  80000000, 5000000, 50000000, True)
@@ -261,7 +263,7 @@ diccionario_organizaciones = {ministerio_salud_chile.nombre: ministerio_salud_ch
 
 En los fragmentos de código anteriores se crean una lista y un diccionario que contienen todos los objetos de las clases **OrganizacionPublica** y **OrganizacionPrivada**. En el diccionario se utiliza el nombre de la organización como llave y el objeto como valor. Se coloco el nombre de la organización accediendo al atributo **nombre** de cada objeto, esto a fin de evitar errores al escribir el nombre.
 
-### Pregunta sobre tiempo de búsqueda en lista y diccionario
+## Pregunta sobre tiempo de búsqueda en lista y diccionario
 
 Se nos preguntaba: ***si tuvieras qué buscar un objeto con un nombre específico en estas estructuras, ¿en cuál de las dos ser ́ıa más rápido encontralo y por qué?***
 
@@ -293,3 +295,23 @@ print(fin-inicio)
 6.580352783203125e-05
 ```
 Como se puede observar, el tiempo que tarda en encontrar el objeto en el diccionario es mucho menor que el tiempo que tarda en encontrarlo en la lista.
+
+## Cumplimiento de los requerimientos del enunciado
+
+En el enunciado se solicitaba lo siguiente respecto a las clases:
+1. Una clase base que tenga al menos un método sin implementación.
+2. Dos clases que hereden de otra
+3. Una clase que participe como atributo en otra
+4. Una implementación del metodo str ()
+5. Dos sobrecargas de métodos (override - polimorfismo)
+6. Todas las clases deben contener un campo nombre, que permita identificar individualmente a cada
+objeto creado
+
+Se señalará en que parte del código se cumple cada uno de los requerimientos:
+
+1. Se cumple en la clase **Organizacion** con el método **calcular_valor** y en la clase **Persona** con el método **generar_nombre_completo**.
+2. Se cumple con las clases **OrganizacionPublica** y **OrganizacionPrivada** que heredan de la clase **Organizacion**.
+3. Se cumple con que la clase **Trabajador** es un atributo de la clase **Organizacion**. El atributo en cuestion sería **trabajadores**.
+4. Se cumple en las clases **OrganizacionPublica** y **OrganizacionPrivada** con el método **\_\_str\_\_**.
+5. Se cumple con las clases **OrganizacionPublica** y **OrganizacionPrivada** que sobrecargan el método **calcular_valor**.
+6. Se cumple en todas las clases, ya que todas poseen un atributo **nombre**.
