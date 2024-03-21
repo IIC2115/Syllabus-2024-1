@@ -2,7 +2,6 @@
 
 ## Indice
 
-- [Indice](#indice)
 - [Tema](#tema)
 - [Diagrama de Clases](#diagrama-de-clases)
 - [Código](#código)
