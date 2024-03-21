@@ -2,6 +2,7 @@
 
 ## Indice
 
+- [Indice](#indice)
 - [Tema](#tema)
 - [Diagrama de Clases](#diagrama-de-clases)
 - [Código](#código)
@@ -17,6 +18,7 @@
         - [Objetos OrganizacionPublica](#objetos-organizacionpublica)
         - [Objetos OrganizacionPrivada](#objetos-organizacionprivada)
     - [Guardar objetos en lista y diccionario](#guardar-objetos-en-lista-y-diccionario)
+- [Pregunta sobre tiempo de búsqueda en lista y diccionario](#pregunta-sobre-tiempo-de-búsqueda-en-lista-y-diccionario)
 
 
 ## Tema
