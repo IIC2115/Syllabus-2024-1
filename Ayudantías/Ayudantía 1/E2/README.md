@@ -48,7 +48,7 @@ Lo que hace este fragmento de código es abrir el archivo **movies.json** y carg
 
 - **Actor** : Clase que representa un actor. Tiene los siguientes atributos:
 
-    - **name**: Nombre del actor.
+    - **full_name**: Nombre del actor.
     - **n_movies**: Número de películas en las que ha participado el actor.
     - **start_career**: Año en que comenzó la carrera del actor.
     - **end_career**: Año en que terminó la carrera del actor.
