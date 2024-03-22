@@ -48,58 +48,60 @@ Lo que hace este fragmento de código es abrir el archivo **movies.json** y carg
 
 - **Actor** : Clase que representa un actor. Tiene los siguientes atributos:
 
-  - **name**: Nombre del actor.
-  - **n_movies**: Número de películas en las que ha participado el actor.
+    - **name**: Nombre del actor.
+    - **n_movies**: Número de películas en las que ha participado el actor.
+    - **start_career**: Año en que comenzó la carrera del actor.
+    - **end_career**: Año en que terminó la carrera del actor.
 
-  ```python
-  class Actor:
-      def __init__(self, full_name, start_career):
-          self.full_name = full_name
-          self.n_movies = 0
-          self.start_career = start_career
-          self.end_career = start_career
+    ```python
+    class Actor:
+        def __init__(self, full_name, start_career):
+            self.full_name = full_name
+            self.n_movies = 0
+            self.start_career = start_career
+            self.end_career = start_career
 
-      def update_track_record(self, year):
-          if self.start_career > year:
-              self.start_career = year
-          if self.end_career < year:
-              self.end_career = year
+        def update_track_record(self, year):
+            if self.start_career > year:
+                self.start_career = year
+            if self.end_career < year:
+                self.end_career = year
 
-      def years_track_record(self):
-          return self.end_career - self.start_career
+        def years_track_record(self):
+            return self.end_career - self.start_career
 
-      def __repr__(self):
-          return f"{self.full_name}"
-  ```
+        def __repr__(self):
+            return f"{self.full_name}"
+    ```
 
-  Lo que hace este fragmento de código es crear una clase **Actor** con un constructor que recibe como parámetros el nombre completo del actor y el año en que comenzó su carrera. Además, tiene un método **update_track_record** que actualiza el año de inicio y fin de la carrera del actor, un método **years_track_record** que retorna la cantidad de años que el actor ha estado en la industria y un método **\_\_repr\_\_** que retorna el nombre completo del actor.
+    Lo que hace este fragmento de código es crear una clase **Actor** con un constructor que recibe como parámetros el nombre completo del actor y el año en que comenzó su carrera. Además, tiene un método **update_track_record** que actualiza el año de inicio y fin de la carrera del actor, un método **years_track_record** que retorna la cantidad de años que el actor ha estado en la industria y un método **\_\_repr\_\_** que retorna el    nombre completo del actor.
 
 - **Genre** : Clase que representa un género de una película. Tiene los siguientes atributos:
 
-  - **name**: Nombre del género.
-  - **n_movies**: Número de películas que pertenecen a ese género.
+    - **name**: Nombre del género.
+    - **n_movies**: Número de películas que pertenecen a ese género.
 
-  ```python
-  class Genre:
+    ```python
+    class Genre:
     def __init__(self, name):
         self.name = name
         self.n_movies = 0
-    
+
     def __repr__(self):
         return f"{self.name}"
-  ```
+    ```
 
-  Lo que hace este fragmento de código es crear una clase **Genre** con un constructor que recibe como parámetro el nombre del género. Además, inicializa el atributo **n_movies** en 0.
+    Lo que hace este fragmento de código es crear una clase **Genre** con un constructor que recibe como parámetro el nombre del género. Además, inicializa el atributo **n_movies** en 0.
 
 - **Movie** : Clase que representa una película. Tiene los siguientes atributos:
 
-  - **title**: Título de la película.
-  - **year**: Año de lanzamiento de la película.
-  - **cast**: Tupla de actores que participaron en la película. Cada actor es un objeto de la clase Actor.
-  - **genres**: Lista de géneros de la película. Cada género es un objeto de la clase Genre.
+    - **title**: Título de la película.
+    - **year**: Año de lanzamiento de la película.
+    - **cast**: Tupla de actores que participaron en la película. Cada actor es un objeto de la clase Actor.
+    - **genres**: Lista de géneros de la película. Cada género es un objeto de la clase Genre.
 
-  ```python
-  class Movie:
+    ```python
+    class Movie:
     def __init__(self, title, year, cast, genres):
         self.title = title
         self.year = year
@@ -112,12 +114,12 @@ Lo que hace este fragmento de código es abrir el archivo **movies.json** y carg
             actor.n_movies += 1
         for genre in self.genres:
             genre.n_movies += 1
-    
+
     def __repr__(self):
         return f"{self.title} ({self.year}) - {self.cast} - {self.genres}"
-  ```
+    ```
 
-  Lo que hace este fragmento de código es crear una clase **Movie** con un constructor que recibe como parámetros el título, el año, el elenco y los géneros de la película. Además, tiene un método **add_info** que incrementa el número de películas en las que ha participado cada actor y el número de películas de cada género que se ejecuta cada vez que se crea una instancia de la clase **Movie**.
+    Lo que hace este fragmento de código es crear una clase **Movie** con un constructor que recibe como parámetros el título, el año, el elenco y los géneros de la película. Además, tiene un método **add_info** que incrementa el número de películas en las que ha participado cada actor y el número de películas de cada género que se ejecuta cada vez que se crea una instancia de la clase **Movie**.
 
 ### Cargando datos en objetos
 
