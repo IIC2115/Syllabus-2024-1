@@ -265,7 +265,7 @@ En los fragmentos de código anteriores se crean una lista y un diccionario que 
 
 ## Pregunta sobre tiempo de búsqueda en lista y diccionario
 
-Se nos preguntaba: ***si tuvieras qué buscar un objeto con un nombre específico en estas estructuras, ¿en cuál de las dos ser ́ıa más rápido encontralo y por qué?***
+Se nos preguntaba: ***si tuvieras qué buscar un objeto con un nombre específico en estas estructuras, ¿en cuál de las dos sería más rápido encontrarlo y por qué?***
 
 La respuesta a esto es que sería más rápido en un diccionario ya que el **acceder a un valor en un diccionario es de tiempo constante**, es decir, **no depende de la cantidad de elementos del diccionario**. Por otro lado, en una lista el tiempo de búsqueda depende de la cantidad de elementos que tenga la lista.
 
