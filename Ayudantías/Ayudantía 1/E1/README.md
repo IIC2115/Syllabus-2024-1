@@ -25,7 +25,7 @@
 
 ## Tema
 
-El tema seleccionado para la resolución de este ejercicio fue el de `Organizaciones`, se considero que una organización es un grupo de personas que se unen para alcanzar un objetivo en común, y que tiene las siguientes características:
+El tema seleccionado para la resolución de este ejercicio fue el de **Organizaciones**, se considero que una organización es un grupo de personas que se unen para alcanzar un objetivo en común, y que tiene las siguientes características:
 
 - **Nombre**: El nombre de la organización.
 - **Trabajadores**: Los trabajadores que pertenecen a la organización.
@@ -33,13 +33,13 @@ El tema seleccionado para la resolución de este ejercicio fue el de `Organizaci
 - **Pasivos**: Los pasivos que posee la organización.
 - **Patrimonio**: El patrimonio de la organización.
 
-Tambien se considero que toda organización tendrá una manera de `calcular su valor`.
+Tambien se considero que toda organización tendrá una manera de **calcular su valor**.
 
 Las organizaciones puede clasificarse en dos tipos:
 
-- **Organización Pública**: Son aquellas organizaciones que pertenecen al estado. Este tipo de organizaciones tendrán una característica adicional que será el `impacto social` que tiene la organización en la sociedad.
+- **Organización Pública**: Son aquellas organizaciones que pertenecen al estado. Este tipo de organizaciones tendrán una característica adicional que será el **impacto social** que tiene la organización en la sociedad.
 
-- **Organización Privada**: Son aquellas organizaciones que pertenecen a particulares. Este tipo de organizaciones tendrán una característica adicional que será `diferenciación`, esta característica se refiere a la manera en que la organización se diferencia de las demás organizaciones.
+- **Organización Privada**: Son aquellas organizaciones que pertenecen a particulares. Este tipo de organizaciones tendrán una característica adicional que será **diferenciación**, esta característica se refiere a la manera en que la organización se diferencia de las demás organizaciones.
 
 Las organizaciones funcionan debido a que tienen personas trabajando en ellas, las personas en el contexto de este ejercicio tendrán las siguientes características:
 
@@ -47,7 +47,7 @@ Las organizaciones funcionan debido a que tienen personas trabajando en ellas, l
 - **Apellidos**: Los apellidos de la persona.
 - **rut**: El rut de la persona.
 
-Cuando una persona es un trabajador de una organización, se considera que tiene una característica adicional que es el `salario` que recibe.
+Cuando una persona es un trabajador de una organización, se considera que tiene una característica adicional que es el **salario** que recibe.
 
 Además, se considera que **una organización puede tener uno o más trabajadores** pero **un trabajador solamente puede pertenecer a una organización**.
 
@@ -59,129 +59,129 @@ Teniendo en cuenta la explicación del tema, se procedió a crear el siguiente d
 
 ![alt text](E1.jpg)
 
-En este diagrama se puede observar que se crearon las clases `Organizacionn`, `OrganizacionPublica`, `OrganizacionPrivada`, `Persona` y `Trabajador`.
+En este diagrama se puede observar que se crearon las clases **Organizacionn**, **OrganizacionPublica**, **OrganizacionPrivada**, **Persona** y **Trabajador**.
 
-La clase `Organizacion` posee los atributos `nombre`, `trabajadores`, `activos`, `pasivos` y `patrimonio`, además del método `calcular_valor`. Es la clase padre de las clases `OrganizacionPublica` y `OrganizacionPrivada`, estás clases heredan los atributos y métodos de la clase `Organizacion`, pero además poseen atributos y métodos propios que las diferencian tales como `impacto_social` y `diferenciacion` respectivamente.
+La clase **Organizacion** posee los atributos **nombre**, **trabajadores**, **activos**, **pasivos** y **patrimonio**, además del método **calcular_valor**. Es la clase padre de las clases **OrganizacionPublica** y **OrganizacionPrivada**, estás clases heredan los atributos y métodos de la clase **Organizacion**, pero además poseen atributos y métodos propios que las diferencian tales como **impacto_social** y **diferenciacion** respectivamente.
 
-Una observación importante es que el atributo `trabajadores` de la clase `Organizacion` es `privado`, lo cual implica que solamente la clase `Organizacion` puede acceder a él. En el diagrama de clases esto se señala con el símbolo de `-` antes del nombre del atributo.
+Una observación importante es que el atributo **trabajadores** de la clase **Organizacion** es **privado**, lo cual implica que solamente la clase **Organizacion** puede acceder a él. En el diagrama de clases esto se señala con el símbolo de **-** antes del nombre del atributo.
 
-La clase `Persona` posee los atributos `nombres`, `apellidos` y `rut`, además del método `generar_nombre_completo`. La clase `Trabajador` hereda los atributos y métodos de la clase `Persona`, pero además posee el atributo `salario`.
+La clase **Persona** posee los atributos **nombres**, **apellidos** y **rut**, además del método **generar_nombre_completo**. La clase **Trabajador** hereda los atributos y métodos de la clase **Persona**, pero además posee el atributo **salario**.
 
-La relación entre las clases `Organizacion` y `Trabajador` es de `composición`, esto se debe a que un trabajador solamente puede pertenecer a una organización, por lo que si la organización se destruye, los trabajadores también se destruyen. En el diagrama de clases esto se señala con un rombo relleno en la clase `Organizacion` y una flecha que apunta a la clase `Trabajador`. El hecho de que una organización pueda tener uno o más trabajadores se señala con el número `1` en la clase `Organizacion` y el símbolo `1..*` en la clase `Trabajador`.
+La relación entre las clases **Organizacion** y **Trabajador** es de **composición**, esto se debe a que un trabajador solamente puede pertenecer a una organización, por lo que si la organización se destruye, los trabajadores también se destruyen. En el diagrama de clases esto se señala con un rombo relleno en la clase **Organizacion** y una flecha que apunta a la clase **Trabajador**. El hecho de que una organización pueda tener uno o más trabajadores se señala con el número **1** en la clase **Organizacion** y el símbolo **1..\*** en la clase **Trabajador**.
 
 ## Código
 
 ### Consideraciones
 
-- Se utilizo la librería `abc`, en específico la clase `ABC` y la función `abstractmethod` para la creación de clases abstractas y métodos abstractos respectivamente. Esto con el fin de que las clases hijas `OrganizacionPublica` y `OrganizacionPrivada` implementen el método `calcular_valor`, ya que en caso contrario se generaría un error. Dicho esto, para la realización de lo solicitado en el enunciado del ejercicio esto no sería obligatorio y en su lugar podría usarse clases normales y métodos normales.
+- Se utilizo la librería **abc**, en específico la clase **ABC** y la función **abstractmethod** para la creación de clases abstractas y métodos abstractos respectivamente. Esto con el fin de que las clases hijas **OrganizacionPublica** y **OrganizacionPrivada** implementen el método **calcular_valor**, ya que en caso contrario se generaría un error. Dicho esto, para la realización de lo solicitado en el enunciado del ejercicio esto no sería obligatorio y en su lugar podría usarse clases normales y métodos normales.
 
 ### Clases
 
 - **Organizacion**
 
-```python
-class Organizacion(metaclass=ABCMeta):
-    def __init__(self, nombre, trabajadores, activos, pasivos, patrimonio):
-        self.nombre = nombre
-        self.__trabajadores = trabajadores
-        self.activos = activos
-        self.pasivos = pasivos
-        self.patrimonio = patrimonio
+    ```python
+    class Organizacion(metaclass=ABCMeta):
+        def __init__(self, nombre, trabajadores, activos, pasivos, patrimonio):
+            self.nombre = nombre
+            self.__trabajadores = trabajadores
+            self.activos = activos
+            self.pasivos = pasivos
+            self.patrimonio = patrimonio
 
-    @abstractmethod
-    def calcular_valor(self):
-        pass
+        @abstractmethod
+        def calcular_valor(self):
+            pass
 
-    @abstractmethod
-    def __str__(self):
-        pass
-```
+        @abstractmethod
+        def __str__(self):
+            pass
+    ```
 
-En esta clase se definen los atributos `nombre`, `trabajadores`, `activos`, `pasivos` y `patrimonio`, además del método `calcular_valor` y el método `__str__`. El `___init__` es el método constructor de la clase, este recibe como parámetros los atributos de la clase y los asigna a los atributos de la clase que lo necesitan y se ejecuta al momento de instanciar un objeto de la clase. El método `calcular_valor` es un método abstracto que se deja sin implementar al igual que el método `__str__`.
+    En esta clase se definen los atributos **nombre**, **trabajadores**, **activos**, **pasivos** y **patrimonio**, además del método **calcular_valor** y el método **\_\_str\_\_**. El **\_\_init\_\_** es el método constructor de la clase, este recibe como parámetros los atributos de la clase y los asigna a los atributos de la clase que lo necesitan y se ejecuta al momento de instanciar un objeto de la clase. El método **calcular_valor** es un método abstracto que se deja sin implementar al igual que el método **\_\_str\_\_**.
 
-Como se dijo en incisos anteriores el atributo `trabajadores` es `privado`, esto se señala con el símbolo `__` antes del nombre del atributo. 
+    Como se dijo en incisos anteriores el atributo **trabajadores** es **privado**, esto se señala con el símbolo **\_\_** antes del nombre del atributo. 
 
-Una observación importante es que cuando hacemos que la clase `Organizacion` herede de la clase `ABC` y le pasamos como parámetro `metaclass=ABCMeta`, lo que hace esta parte es indicar que la clase `Organizacion` es una clase abstracta. Por otro lado los decoradores `@abstractmethod` se utilizan para indicar que el método `calcular_valor` es un método abstracto, lo que significa que las clases hijas `OrganizacionPublica` y `OrganizacionPrivada` deben implementar este método, ya que en caso contrario se generaría un error.
+    Una observación importante es que cuando hacemos que la clase **Organizacion** herede de la clase **ABC** y le pasamos como parámetro **metaclass=ABCMeta**, lo que hace esta parte es indicar que la clase **Organizacion** es una clase abstracta. Por otro lado los decoradores **@abstractmethod** se utilizan para indicar que el método **calcular_valor** es un método abstracto, lo que significa que las clases hijas **OrganizacionPublica** y **OrganizacionPrivada** deben implementar este método, ya que en caso contrario se generaría un error.
 
 - **OrganizacionPublica**
 
-```python
-class OrganizacionPublica(Organizacion):
-    def __init__(
-        self, nombre, trabajadores, activos, pasivos, patrimonio, impacto_social
-    ):
-        super().__init__(nombre, trabajadores, activos, pasivos, patrimonio)
-        self.impacto_social = impacto_social
+    ```python
+    class OrganizacionPublica(Organizacion):
+        def __init__(
+            self, nombre, trabajadores, activos, pasivos, patrimonio, impacto_social
+        ):
+            super().__init__(nombre, trabajadores, activos, pasivos, patrimonio)
+            self.impacto_social = impacto_social
 
-    def calcular_valor(self):
-        valor_organizacion = self.activos + self.patrimonio - self.pasivos
-        if self.impacto_social == "alto":
-            valor_organizacion += 100
-        elif self.impacto_social == "medio":
-            valor_organizacion += 50
-        else:
-            valor_organizacion += 10
-        return valor_organizacion
+        def calcular_valor(self):
+            valor_organizacion = self.activos + self.patrimonio - self.pasivos
+            if self.impacto_social == "alto":
+                valor_organizacion += 100
+            elif self.impacto_social == "medio":
+                valor_organizacion += 50
+            else:
+                valor_organizacion += 10
+            return valor_organizacion
 
-    def __str__(self):
-        return f"Organización Pública: {self.nombre}"
-```
+        def __str__(self):
+            return f"Organización Pública: {self.nombre}"
+    ```
 
-Como se dijo previamente la clase `OrganizacionPublica` hereda de la clase `Organizacion`, por lo que posee los atributos `nombre`, `trabajadores`, `activos`, `pasivos`, `patrimonio` e `impacto_social`. Para lograr esto en el nombre de la clase se agrega `(Organizacion)` al lado del nombre de la clase, esto indica que la clase `OrganizacionPublica` hereda de la clase `Organizacion`. Además, en el constructor, se utiliza la función `super().__init__` que permite llamar al constructor de la clase padre y asignarle los atributos que le corresponden.
+    Como se dijo previamente la clase **OrganizacionPublica** hereda de la clase **Organizacion**, por lo que posee los atributos **nombre**, **trabajadores**, **activos**, **pasivos**, **patrimonio** e **impacto_social**. Para lograr esto en el nombre de la clase se agrega **(Organizacion)** al lado del nombre de la clase, esto indica que la clase **OrganizacionPublica** hereda de la clase **Organizacion**. Además, en el constructor, se utiliza la función **super().\_\_init\_\_** que permite llamar al constructor de la clase padre y asignarle los atributos que le corresponden.
 
-También se reescriben los métodos `calcular_valor` y `__str__`. En el método `calcular_valor` se calcula el valor de la organización y se le suma un valor adicional dependiendo del impacto social que tenga la organización. En el método `__str__` se retorna el nombre de la organización acompañado de un mensaje que indica que es una organización pública.
+    También se reescriben los métodos **calcular_valor** y **\_\_str\_\_**. En el método **calcular_valor** se calcula el valor de la organización y se le suma un valor adicional dependiendo del impacto social que tenga la organización. En el método **\_\_str\_\_** se retorna el nombre de la organización acompañado de un mensaje que indica que es una organización pública.
 
 - **OrganizacionPrivada**
 
-```python
-class OrganizacionPrivada(Organizacion):
-    def __init__(
-        self, nombre, trabajadores, activos, pasivos, patrimonio, diferenciacion
-    ):
-        super().__init__(nombre, trabajadores, activos, pasivos, patrimonio)
-        self.diferenciacion = diferenciacion
+    ```python
+    class OrganizacionPrivada(Organizacion):
+        def __init__(
+            self, nombre, trabajadores, activos, pasivos, patrimonio, diferenciacion
+        ):
+            super().__init__(nombre, trabajadores, activos, pasivos, patrimonio)
+            self.diferenciacion = diferenciacion
 
-    def calcular_valor(self):
-        valor_organizacion = self.activos + self.patrimonio - self.pasivos
-        if self.diferenciacion:
-            valor_organizacion += 100
-        return valor_organizacion
+        def calcular_valor(self):
+            valor_organizacion = self.activos + self.patrimonio - self.pasivos
+            if self.diferenciacion:
+                valor_organizacion += 100
+            return valor_organizacion
 
-    def __str__(self):
-        return f"Organización Privada: {self.nombre}"
-```
+        def __str__(self):
+            return f"Organización Privada: {self.nombre}"
+    ```
 
-En esta clase se hace lo mismo que en la clase `OrganizacionPublica`, se hereda de la clase `Organizacion`, se llama al constructor de la clase padre y se reescriben los métodos `calcular_valor` y `__str__`. En el método `calcular_valor` se calcula el valor de la organización y se le suma un valor adicional si la organización tiene diferenciación. En el método `__str__` se retorna el nombre de la organización acompañado de un mensaje que indica que es una organización privada.
+    En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hereda de la clase **Organizacion**, se llama al constructor de la clase padre y se reescriben los métodos **calcular_valor** y **\_\_str\_\_**. En el método **calcular_valor** se calcula el valor de la organización y se le suma un valor adicional si la organización tiene diferenciación. En el método **\_\_str\_\_** se retorna el nombre de la organización acompañado de un mensaje que indica que es una organización privada.
 
 - **Persona**
 
-```python
-class Persona(metaclass=ABCMeta):
-    def __init__(self, nombre, apellido, rut):
-        self.nombre = nombre
-        self.apellido = apellido
-        self.rut = rut
+    ```python
+    class Persona(metaclass=ABCMeta):
+        def __init__(self, nombre, apellido, rut):
+            self.nombre = nombre
+            self.apellido = apellido
+            self.rut = rut
 
-    @abstractmethod
-    def generar_nombre_completo(self):
-        pass
-```
+        @abstractmethod
+        def generar_nombre_completo(self):
+            pass
+    ```
 
-En esta clase se hace lo mismo que en la clase `Organizacion`, se hereda de la clase `ABC`, se definen los atributos `nombre`, `apellido` y `rut`, además del método `generar_nombre_completo` pero este último es un método abstracto y se deja sin implementar.
+    En esta clase se hace lo mismo que en la clase **Organizacion**, se hereda de la clase **ABC**, se definen los atributos **nombre**, **apellido** y **rut**, además del método **generar_nombre_completo** pero este último es un método abstracto y se deja sin implementar.
 
 - **Trabajador**
 
-```python
-class Trabajador(Persona):
-    def __init__(self, nombre, apellido, rut, salario):
-        super().__init__(nombre, apellido, rut)
-        self.salario = salario
-    
-    def generar_nombre_completo(self):
-        return f"Trabajador {self.nombre} {self.apellido}"
-```
+    ```python
+    class Trabajador(Persona):
+        def __init__(self, nombre, apellido, rut, salario):
+            super().__init__(nombre, apellido, rut)
+            self.salario = salario
+        
+        def generar_nombre_completo(self):
+            return f"Trabajador {self.nombre} {self.apellido}"
+    ```
 
-En esta clase se hace lo mismo que en la clase `OrganizacionPublica`, se hereda de la clase `Persona`, se llama al constructor de la clase padre y añaade el atributo `salario`. Además, se reescribe el método `generar_nombre_completo`.
+    En esta clase se hace lo mismo que en la clase **OrganizacionPublica**, se hereda de la clase **Persona**, se llama al constructor de la clase padre y añaade el atributo **salario**. Además, se reescribe el método **generar_nombre_completo**.
 
 ### Crear objetos
 
@@ -200,7 +200,7 @@ trabajador_9 = Trabajador("Miguel", "Lopez", "12345678-7", 400000)
 trabajador_10 = Trabajador("Sofia", "Gonzalez", "12345678-8", 400000)
 ```
 
-En este fragmento de código se crean 10 objetos de la clase `Trabajador`. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
+En este fragmento de código se crean 10 objetos de la clase **Trabajador**. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
 
 ```python
 lista_1 = [trabajador_1, trabajador_2]
@@ -210,7 +210,7 @@ lista_4 = [trabajador_7, trabajador_8]
 lista_5 = [trabajador_9, trabajador_10]
 ```
     
-En este fragmento de código se crean 5 listas, cada una de ellas contiene 2 objetos de la clase `Trabajador`. Esto para que cada una de las listas sea asignada a una organización.
+En este fragmento de código se crean 5 listas, cada una de ellas contiene 2 objetos de la clase **Trabajador**. Esto para que cada una de las listas sea asignada a una organización.
 
 #### Objetos OrganizacionPublica
 
@@ -227,7 +227,7 @@ servicio_nacional_de_la_discapacidad = OrganizacionPublica("Servicio Nacional de
 servicio_nacional_de_la_mujer = OrganizacionPublica("Servicio Nacional de la Mujer", lista_5,  60000000, 3000000, 40000000, "alto")
 ```
 
-En este fragmento de código se crean 10 objetos de la clase `OrganizacionPublica`. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
+En este fragmento de código se crean 10 objetos de la clase **OrganizacionPublica**. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
 
 #### Objetos OrganizacionPrivada
 
@@ -249,7 +249,7 @@ colbun = OrganizacionPrivada("Colbun", lista_4, 80000000, 5000000, 50000000, Fal
 latam = OrganizacionPrivada("Latam", lista_5, 80000000, 5000000, 50000000, False)
 ```
 
-En este fragmento de código se crean 15 objetos de la clase `OrganizacionPrivada`. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
+En este fragmento de código se crean 15 objetos de la clase **OrganizacionPrivada**. Para ellos se les entrega cada uno de los parámetros que necesita el constructor de la clase.
 
 ### Guardar objetos en lista y diccionario
 
@@ -261,7 +261,7 @@ lista_organizaciones = [ministerio_salud_chile, conaf, ministerio_educacion_chil
 diccionario_organizaciones = {ministerio_salud_chile.nombre: ministerio_salud_chile, conaf.nombre: conaf, ministerio_educacion_chile.nombre: ministerio_educacion_chile, ministerio_energia_chile.nombre: ministerio_energia_chile, ministerio_justicia_chile.nombre: ministerio_justicia_chile, servicio_de_aduanas.nombre: servicio_de_aduanas, servicio_de_impuestos_internos.nombre: servicio_de_impuestos_internos, servicio_nacional_del_consumidor.nombre: servicio_nacional_del_consumidor, servicio_nacional_de_la_discapacidad.nombre: servicio_nacional_de_la_discapacidad, servicio_nacional_de_la_mujer.nombre: servicio_nacional_de_la_mujer, banco_de_chile.nombre: banco_de_chile, entel.nombre: entel, cencosud.nombre: cencosud, latam.nombre: latam, falabella.nombre: falabella, ripley.nombre: ripley, santander.nombre: santander, bci.nombre: bci, bice.nombre: bice, itau.nombre: itau, codelco.nombre: codelco, enel.nombre: enel, aes_gener.nombre: aes_gener, colbun.nombre: colbun, latam.nombre: latam}
 ```
 
-En los fragmentos de código anteriores se crean una lista y un diccionario que contienen todos los objetos de las clases `OrganizacionPublica` y `OrganizacionPrivada`. En el diccionario se utiliza el nombre de la organización como llave y el objeto como valor. Se coloco el nombre de la organización accediendo al atributo `nombre` de cada objeto, esto a fin de evitar errores al escribir el nombre.
+En los fragmentos de código anteriores se crean una lista y un diccionario que contienen todos los objetos de las clases **OrganizacionPublica** y **OrganizacionPrivada**. En el diccionario se utiliza el nombre de la organización como llave y el objeto como valor. Se coloco el nombre de la organización accediendo al atributo **nombre** de cada objeto, esto a fin de evitar errores al escribir el nombre.
 
 ## Pregunta sobre tiempo de búsqueda en lista y diccionario
 
@@ -314,9 +314,9 @@ objeto creado
 
 Se señalará en que parte del código se cumple cada uno de los requerimientos:
 
-1. Se cumple en la clase `Organizacion` con el método `calcular_valor` y en la clase `Persona` con el método `generar_nombre_completo`.
-2. Se cumple con las clases `OrganizacionPublica` y `OrganizacionPrivada` que heredan de la clase `Organizacion`.
-3. Se cumple con que la clase `Trabajador` es un atributo de la clase `Organizacion`. El atributo en cuestion sería `trabajadores`.
-4. Se cumple en las clases `OrganizacionPublica` y `OrganizacionPrivada` con el método `__str__`.
-5. Se cumple con las clases `OrganizacionPublica` y `OrganizacionPrivada` que sobrecargan el método `calcular_valor`.
-6. Se cumple en todas las clases, ya que todas poseen un atributo `nombre`.
+1. Se cumple en la clase **Organizacion** con el método **calcular_valor** y en la clase **Persona** con el método **generar_nombre_completo**.
+2. Se cumple con las clases **OrganizacionPublica** y **OrganizacionPrivada** que heredan de la clase **Organizacion**.
+3. Se cumple con que la clase **Trabajador** es un atributo de la clase **Organizacion**. El atributo en cuestion sería **trabajadores**.
+4. Se cumple en las clases **OrganizacionPublica** y **OrganizacionPrivada** con el método **\_\_str\_\_**.
+5. Se cumple con las clases **OrganizacionPublica** y **OrganizacionPrivada** que sobrecargan el método **calcular_valor**.
+6. Se cumple en todas las clases, ya que todas poseen un atributo **nombre**.
