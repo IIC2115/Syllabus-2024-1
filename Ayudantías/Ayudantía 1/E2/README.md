@@ -2,6 +2,7 @@
 
 ## Indice
 
+- [Video Explicativo](#video-explicativo)
 - [Análisis del archivo json](#análisis-del-archivo-json)
 - [Código](#código)
     - [Cargando el archivo json](#cargando-el-archivo-json)
@@ -19,6 +20,10 @@
         - [Encuentre los 3 años con más películas estrenadas](#encuentre-los-3-años-con-más-películas-estrenadas)
         - [Encuentre a los 5 actores con la trayectoria más larga, es decir, mayor cantidad de años actuando](#encuentre-a-los-5-actores-con-la-trayectoria-más-larga-es-decir-mayor-cantidad-de-años-actuando)
         - [Encuentre el reparto de una película (2 o más actores) que se haya repetido completo en otras la mayor cantidad de veces](#encuentre-el-reparto-de-una-película-2-o-más-actores-que-se-haya-repetido-completo-en-otras-la-mayor-cantidad-de-veces)
+
+## Video Explicativo
+
+El video explicativo se encuentra en el siguiente [link](https://youtu.be/zXfzhkcjsGU)
 
 ## Análisis del archivo json
 
