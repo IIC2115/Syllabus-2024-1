@@ -23,7 +23,7 @@
 
 ## Video Explicativo
 
-El video explicativo se encuentra en el siguiente [enlace]
+El video explicativo se encuentra en el siguiente [enlace](https://youtu.be/Y6ORKZIe2Uc)
 
 ## Análisis del archivo json
 
