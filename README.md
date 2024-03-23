@@ -32,7 +32,7 @@
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
 | Cátedra     | Lunes 18/03  | [Slides](Material%20de%20clases/Cap%C3%ADtulo%201/Slides) - [Materia](Material%20de%20clases/Cap%C3%ADtulo%201/Notebooks) - [Ejercicios](Material%20de%20clases/Cap%C3%ADtulo%201/Ejercicios) - [Ticket](https://forms.gle/WVxvXLcWku5tycQg8) |
-| Ayudantía   | Jueves 21/03 | Slides - Código |
+| Ayudantía   | Jueves 21/03 | Slides - Código - [Video Ejercicio 2](https://youtu.be/zXfzhkcjsGU)|
 </details>
 
 
