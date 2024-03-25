@@ -198,7 +198,7 @@ Tener en cuenta que **movies** es una lista de diccionarios, donde cada dicciona
         ....
 ```
 
-En el segmento anterior se mencionaba que se debía tener en cuenta que varios actores participaron en más de una película, sin embargo, lo esperado es que se cree un objeto de la clase **Actor** por cada actor. Para crear un objeto de la clase **Actor** es necesario entregar el nombre del actor y el año de la película actual, los actores se diferenciarán por su nombre, es decir, si se encuentra un actor con el mismo nombre en otra película, no se creará un nuevo objeto de la clase **Actor**, sino que en su lugar se buscará el objeto **Actor** ya creado en el diccionario. Para realizar esto es precisamente que se utilizan los diccionarios, en este caso **actors_dict**.
+En el segmento anterior se mencionaba que se debía tener en cuenta que varios actores participaron en más de una película, sin embargo, lo esperado es que se cree un objeto de la clase **Actor** por cada actor. Para crear un objeto de la clase **Actor** es necesario entregar el nombre del actor y el año de la película actual, los actores se diferenciarán por su nombre, es decir, la primera vez que se encuentre el nombre del actor se creará un objeto de la clase **Actor** con el nombre del actor y el año de la película actual, y las siguientes veces que se encuentre el nombre del actor se buscará el objeto **Actor** ya creado en el diccionario. Para realizar esto es precisamente que se utilizan los diccionarios, en este caso **actors_dict**.
 
 El diccionario **actors_dict** tendrá como llave el nombre del actor y como valor el objeto de la clase **Actor** correspondiente.
 
@@ -213,7 +213,7 @@ En este fragmento, se recorre la lista de actores de la película actual. Para c
     ....
 ```
 
-De modo similar a lo que se hizo con los actores, se debe tener en cuenta que varios géneros pueden estar presentes en más de una película, sin embargo, lo esperado es que se cree un objeto de la clase **Genre** por cada género, es decir, que no se creen géneros duplicados. Para crear un objeto de la clase **Genre** es necesario entregar el nombre del género. Los géneros se diferenciarán por su nombre, es decir, si se encuentra un género con el mismo nombre en otra película, no se creará un nuevo objeto de la clase **Genre**, sino que en su lugar se buscará el objeto **Genre** ya creado en el diccionario. Para realizar esto es precisamente que se utilizan los diccionarios, en este caso **genres_dict**.
+De modo similar a lo que se hizo con los actores, se debe tener en cuenta que varios géneros pueden estar presentes en más de una película, sin embargo, lo esperado es que se cree un objeto de la clase **Genre** por cada género, es decir, la primera vez que se encuentre el nombre del género se creará un objeto de la clase **Genre** con el nombre del género y las siguientes veces que se encuentre el nombre del género se buscará el objeto **Genre** ya creado en el diccionario. Para realizar esto es precisamente que se utilizan los diccionarios, en este caso **genres_dict**.
 
 El diccionario **genres_dict** tendrá como llave el nombre del género y como valor el objeto de la clase **Genre** correspondiente.
 
