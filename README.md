@@ -26,7 +26,7 @@
 </details>
 
 
-<details open>
+<details>
 <summary>Capítulo 1: Fundamentos </summary>
 
 | Instancia   | Fecha        | Recursos |
@@ -34,6 +34,15 @@
 | Cátedra     | Lunes 18/03  | [Slides](Material%20de%20clases/Cap%C3%ADtulo%201/Slides) - [Materia](Material%20de%20clases/Cap%C3%ADtulo%201/Notebooks) - [Ejercicios](Material%20de%20clases/Cap%C3%ADtulo%201/Ejercicios) - [Ticket](https://forms.gle/WVxvXLcWku5tycQg8) |
 | Ayudantía   | Jueves 21/03 | [Slides y Código](Ayudant%C3%ADas/Ayudant%C3%ADa%201) - [Video Ejercicio 2](https://youtu.be/Y6ORKZIe2Uc)|
 | Laboratorio | Lunes 25/03  | [Enunciado](Laboratorios/L1/L1.pdf) |
+</details>
+
+<details open>
+<summary>Capítulo 2: Manejo y Análisis de Datos Tabulares </summary>
+
+| Instancia   | Fecha        | Recursos |
+| :-:         | :-:          | :-:      |
+| Cátedra     | Lunes 01/04  | Slides - [Materia](Material%20de%20clases/Capítulo%202/Notebooks) - Ejercicios - Ticket |
+| Ayudantía   | Jueves 04/04 | |
 </details>
 
 
