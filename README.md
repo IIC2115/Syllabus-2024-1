@@ -41,7 +41,7 @@
 
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
-| Cátedra     | Lunes 01/04  | Slides - [Materia](Material%20de%20clases/Capítulo%202/Notebooks) - Ejercicios - Ticket |
+| Cátedra     | Lunes 01/04  | [Slides](Material%20de%20clases/Capítulo%202/Slides/01%20-%20Manejo%20y%20análisis%20de%20datos%20tabulares.pdf) - [Materia](Material%20de%20clases/Capítulo%202/Notebooks) - [Ejercicios](Material%20de%20clases/Capítulo%202/Ejercicios) - Ticket |
 | Ayudantía   | Jueves 04/04 | |
 </details>
 
