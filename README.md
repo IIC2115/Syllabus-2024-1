@@ -51,7 +51,7 @@
 
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
-| Cátedra     | Lunes 15/04  | [Slides](Material%20de%20clases/Capítulo%203/Slides/01%20-%20Modelos%20predictivos.pdf) - [Materia](Material%20de%20clases/Capítulo%203/Notebooks) - Ejercicios - [Ticket](https://forms.gle/7k2sXULW9kzjjzDV9) |
+| Cátedra     | Lunes 15/04  | [Slides](Material%20de%20clases/Capítulo%203/Slides/01%20-%20Modelos%20predictivos.pdf) - [Materia](Material%20de%20clases/Capítulo%203/Notebooks) - [Ejercicios](Material%20de%20clases/Capítulo%203/Ejercicios) - [Ticket](https://forms.gle/7k2sXULW9kzjjzDV9) |
 | Ayudantía   | Jueves 18/04 | Solución E1 - Solución E2|
 | Laboratorio | Lunes 22/04  | Enunciado |
 </details>
