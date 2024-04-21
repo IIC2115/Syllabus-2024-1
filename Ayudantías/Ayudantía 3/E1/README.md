@@ -113,7 +113,7 @@ Para llevar a cabo lo segundo y lo tercero se usa el código del cuaderno del ca
 
 Se nos solicita realizar un análisis exploratorio visual de los datos. Para llevar esto a cabo se utiliza el código del cuaderno del capítulo 3, y que se explico en el README de la carpeta __Ayudantía 3__, en específico la sección __Análisis exploratorio de datos__. La diferencia radica en los datos que se están analizando, debido a esto se procederá a analizar los gráficos resultantes.
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 En ambos gráficos se pueden diferenciar tres grupos que corresponden a las tres especies de pingüinos. Se puede decir que los grupos que corresponden a las especies 'Adelie' y 'Chinstrap' son difíciles de separar ya que se superponen, esto se denota más en el gráfico hecho con PCA que en el gráfico hecho con t-SNE. Por otro lado, el grupo que corresponde a la especie 'Gentoo' es fácil de separar de los otros dos grupos.
 
@@ -159,7 +159,7 @@ ax.xaxis.set_major_locator(MaxNLocator(integer=True))
 plt.show()
 ```
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 
 Se puede ver que el punto en el que deja de haber una disminución drástica es desde que se toma el valor 5 por ende el número óptimo de clusters es 5.
@@ -192,7 +192,7 @@ sns.pairplot(training_set_copy, hue='Cluster', palette='viridis')
 plt.show()
 ```
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 
 Este gráfico lo único que hace es mostrar el comportamiento de los datos respecto a sus _features_ en distintas combinaciones en gráficos de 2D.
@@ -208,7 +208,7 @@ plt.scatter(centroids[:, 0], centroids[:, 1], c='red', s=100, marker='x')
 plt.title('Clustering con KMeans')
 ```
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 
 En este gráfico se puede ver los clusters obtenidos en el espacio reducido generado generado por PCA. Se puede ver que los clusters están bien definidos y que los centroides están aproximadamente en el centro de cada cluster.
@@ -217,7 +217,7 @@ Respecto a la relación entre la cantidad de clusters óptimo y los distintos va
 
 También si se analiza el gráfico generado por t-SNE:
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 Se puede que hay un cluster que a su vez se separa en dos grupos, a fin de ver su relación con los datos originales se puede hacer un análisis de los datos que pertenecen a este grupo usando el siguiente código:
 
@@ -292,6 +292,13 @@ hierarchical_df_group_2 = pd.concat([hierarchical_df_groups.get_group(1), hierar
 ```
 
 ```python
+display(hierarchical_df_group_2)
+```
+
+![alt text](img/image-5.png)
+
+
+```python
 hierarchical_df_group_1['group'] = 1
 hierarchical_df_group_2['group'] = 2
 ```
@@ -299,6 +306,13 @@ hierarchical_df_group_2['group'] = 2
 ```python
 hierarchical_df = pd.concat([hierarchical_df_group_1, hierarchical_df_group_2])
 ```
+
+```python
+display(hierarchical_df)
+```
+
+![alt text](img/image-6.png)
+
 
 Para el segundo paso se utiliza el siguiente código:
 

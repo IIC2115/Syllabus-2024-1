@@ -2,7 +2,7 @@
 
 En este ejercicio se realizan en su mayoría las mismas operaciones que en el ejercicio anterior, tales como la construcción de modelos predictivos, en conjunto con su codificación numérica de variables categóricas y su escalamiento de la manera adecuada para evitar el _data leakage_. También se solicita un análisis visual con las misma herramientas que en el ejercicio anterior, es decir, PCA y t-SNE.
 
-Ladiferencia principal de este ejercicio con el anterior, además del hecho de que se obtendrán resultados distintos, es que se utilizará un modelo para completar los datos faltantes de los datos que cargamos inicialmente. Para llevar esto a cabo se realiza la misma operación que se analizará a continuación.
+La diferencia principal de este ejercicio con el anterior, además del hecho de que se obtendrán resultados distintos, es que se utilizará un modelo para completar los datos faltantes de los datos que cargamos inicialmente. Para llevar esto a cabo se realiza la misma operación que se analizará a continuación.
 
 ```python
 from sklearn.neural_network import MLPRegressor
@@ -34,5 +34,5 @@ Lo que hace este código es entrenar un modelo de regresión neuronal para prede
 
 - Aún después de realizar las predicciones y rellenar los datos se tendrán valores nulos en las columnas `O3` y `PM2.5`, esto se debe a que en algunos casos falto algún valor en alguna de las columnas que se usaba para realizar la predicción y por ello no se pudo predecir el valor de `O3` o `PM2.5`.
 
-- En el ejercicio anterior y en este se realiza un análisis con clustering se analiza acerca de que categorías de ``species` o `Environmental_risk` se encuentran en los clusters pero el proceso inverso también es posible, es decir, se puede analizar que clusters se encuentran en una categoría en específico.
+- En el ejercicio anterior y en este se realiza un análisis con clustering se analiza acerca de que categorías de `species` o `Environmental_risk` se encuentran en los clusters pero el proceso inverso también es posible, es decir, se puede analizar que clusters se encuentran en una categoría en específico.
 
