@@ -199,7 +199,7 @@ for ax in pairplot.axes.flat:
 plt.show()
 ```
 
-![alt text](image.png)
+![alt text](img/image-2.png)
 
 
 Este gráfico lo único que hace es mostrar el comportamiento de los datos en sus respectivos clusters respecto a sus _features_ en distintas combinaciones en gráficos de 2D, indicando también sus centroides.
