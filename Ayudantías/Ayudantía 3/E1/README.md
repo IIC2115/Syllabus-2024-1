@@ -188,14 +188,21 @@ Este código realiza el clústering con el número óptimo de clusters encontrad
 Para visualizar los clusters se debe tener en cuenta que dado que para los datos sin reducir se tienen 6 dimensiones (_features_), no se pueden visualizar los clusters en un gráfico. Y para obtener la información del comportamiento de los datos respecto a estas _features_ se puede utilizar el siguiente código:
 
 ```python
-sns.pairplot(training_set_copy, hue='Cluster', palette='viridis')
+pairplot = sns.pairplot(training_set_copy, vars=features, hue='Cluster', palette='viridis')
+
+for ax in pairplot.axes.flat:
+    xlabel = ax.get_xlabel()
+    ylabel = ax.get_ylabel()
+    if xlabel in features and ylabel in features:
+        ax.scatter(centroids[:, features.index(xlabel)], centroids[:, features.index(ylabel)], c='red', s=100, marker='x')
+        
 plt.show()
 ```
 
-![alt text](img/image-2.png)
+![alt text](image.png)
 
 
-Este gráfico lo único que hace es mostrar el comportamiento de los datos respecto a sus _features_ en distintas combinaciones en gráficos de 2D.
+Este gráfico lo único que hace es mostrar el comportamiento de los datos en sus respectivos clusters respecto a sus _features_ en distintas combinaciones en gráficos de 2D, indicando también sus centroides.
 
 Para el caso de los datos reducidos con PCA y t-SNE se puede visualizar los clusters en un gráfico junto con los centroides. Para esto se utiliza el siguiente código:
 
