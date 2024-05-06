@@ -46,7 +46,7 @@
 | Laboratorio | Lunes 08/04  | [Enunciado](Laboratorios/L2/L2.pdf) |
 </details>
 
-<details open>
+<details>
 <summary>Capítulo 3: Modelos Predictivos</summary>
 
 | Instancia   | Fecha        | Recursos |
@@ -54,6 +54,16 @@
 | Cátedra     | Lunes 15/04  | [Slides](Material%20de%20clases/Capítulo%203/Slides/01%20-%20Modelos%20predictivos.pdf) - [Materia](Material%20de%20clases/Capítulo%203/Notebooks) - [Ejercicios](Material%20de%20clases/Capítulo%203/Ejercicios) - [Ticket](https://forms.gle/7k2sXULW9kzjjzDV9) |
 | Ayudantía   | Jueves 18/04 | Solución E1 - Solución E2|
 | Laboratorio | Lunes 22/04  | [Enunciado](Laboratorios/L3/L3.pdf) |
+</details>
+
+
+<details open>
+<summary>Capítulo 4: Análisis de datos geoespaciales</summary>
+
+| Instancia   | Fecha        | Recursos |
+| :-:         | :-:          | :-:      |
+| Cátedra     | Lunes 06/05  | [Slides](Material%20de%20clases/Capítulo%204/Slides/01%20-%20Análisis%20de%20datos%20geoespaciales.pdf) - [Materia](Material%20de%20clases/Capítulo%204/Notebooks) - Ejercicios - [Ticket](https://forms.gle/u4mqEsPj8ZV7V3EK9) |
+| Ayudantía   | Jueves 09/05 | Solución E1 - Solución E2|
 </details>
 
 
