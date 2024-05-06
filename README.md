@@ -62,7 +62,7 @@
 
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
-| Cátedra     | Lunes 06/05  | [Slides](Material%20de%20clases/Capítulo%204/Slides/01%20-%20Análisis%20de%20datos%20geoespaciales.pdf) - [Materia](Material%20de%20clases/Capítulo%204/Notebooks) - Ejercicios - [Ticket](https://forms.gle/u4mqEsPj8ZV7V3EK9) |
+| Cátedra     | Lunes 06/05  | [Slides](Material%20de%20clases/Capítulo%204/Slides/01%20-%20Análisis%20de%20datos%20geoespaciales.pdf) - [Materia](Material%20de%20clases/Capítulo%204/Notebooks) - [Ejercicios](Material%20de%20clases/Capítulo%204/Ejercicios) - [Ticket](https://forms.gle/u4mqEsPj8ZV7V3EK9) |
 | Ayudantía   | Jueves 09/05 | Solución E1 - Solución E2|
 </details>
 
