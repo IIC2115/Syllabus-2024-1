@@ -57,7 +57,7 @@
 </details>
 
 
-<details open>
+<details>
 <summary>Capítulo 4: Análisis de datos geoespaciales</summary>
 
 | Instancia   | Fecha        | Recursos |
@@ -67,6 +67,14 @@
 | Laboratorio | Lunes 13/05  | [Enunciado](Laboratorios/L4/L4.pdf) |
 </details>
 
+<details open>
+<summary>Capítulo 5: Manejo de redes</summary>
+
+| Instancia   | Fecha        | Recursos |
+| :-:         | :-:          | :-:      |
+| Cátedra     | Lunes 20/05  | Slides - [Materia](Material%20de%20clases/Capítulo%205/Notebooks) - Ejercicios - [Ticket](https://forms.gle/66EmVnvy1m7QSmtS7) |
+| Ayudantía   | Jueves 23/05 | Solución E1 - Solución E2|
+</details>
 
 ## Notas
 Las notas oficiales se irán actualizando en [Canvas](https://cursos.canvas.uc.cl/).
