@@ -74,6 +74,7 @@
 | :-:         | :-:          | :-:      |
 | Cátedra     | Lunes 20/05  | [Slides](Material%20de%20clases/Capítulo%205/Slides/01%20-%20Manejo%20de%20redes.pdf) - [Materia](Material%20de%20clases/Capítulo%205/Notebooks) - [Ejercicios](Material%20de%20clases/Capítulo%205/Ejercicios) - [Ticket](https://forms.gle/66EmVnvy1m7QSmtS7) |
 | Ayudantía   | Jueves 23/05 | Solución E1 - Solución E2|
+| Laboratorio | Lunes 27/05  | [Enunciado](Laboratorios/L5/L5.pdf) |
 </details>
 
 ## Notas
