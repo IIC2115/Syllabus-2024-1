@@ -67,7 +67,7 @@
 | Laboratorio | Lunes 13/05  | [Enunciado](Laboratorios/L4/L4.pdf) |
 </details>
 
-<details open>
+<details>
 <summary>Capítulo 5: Manejo de redes</summary>
 
 | Instancia   | Fecha        | Recursos |
@@ -75,6 +75,14 @@
 | Cátedra     | Lunes 20/05  | [Slides](Material%20de%20clases/Capítulo%205/Slides/01%20-%20Manejo%20de%20redes.pdf) - [Materia](Material%20de%20clases/Capítulo%205/Notebooks) - [Ejercicios](Material%20de%20clases/Capítulo%205/Ejercicios) - [Ticket](https://forms.gle/66EmVnvy1m7QSmtS7) |
 | Ayudantía   | Jueves 23/05 | Solución E1 - Solución E2|
 | Laboratorio | Lunes 27/05  | [Enunciado](Laboratorios/L5/L5.pdf) |
+</details>
+
+<details open>
+<summary>Capítulo 6: Bases de datos relacionales</summary>
+
+| Instancia   | Fecha        | Recursos |
+| :-:         | :-:          | :-:      |
+| Cátedra     | Lunes 03/06  | [Slides](Material%20de%20clases/Capítulo%206/Slides/01%20-%20Bases%20de%20datos%20relacionales.pdf) - [Materia](Material%20de%20clases/Capítulo%206/Notebooks) - Ejercicios - [Ticket](https://forms.gle/SRce4hrRr5q536AX6) |
 </details>
 
 ## Notas
