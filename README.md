@@ -83,6 +83,7 @@
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
 | Cátedra     | Lunes 03/06  | [Slides](Material%20de%20clases/Capítulo%206/Slides/01%20-%20Bases%20de%20datos%20relacionales.pdf) - [Materia](Material%20de%20clases/Capítulo%206/Notebooks) - [Ejercicios](Material%20de%20clases/Capítulo%206/Ejercicios) - [Ticket](https://forms.gle/SRce4hrRr5q536AX6) |
+| Laboratorio | Lunes 10/06  | [Enunciado](Laboratorios/L6/L6.pdf) |
 </details>
 
 ## Notas
