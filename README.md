@@ -91,7 +91,7 @@
 
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
-| Cátedra     | Lunes 17/06  | Slides - [Materia](Material%20de%20clases/Capítulo%207/Notebooks) - Ejercicios - [Ticket](https://forms.gle/9KybGubTaEzuP1pv7) |
+| Cátedra     | Lunes 17/06  | [Slides]() - [Materia](Material%20de%20clases/Capítulo%207/Slides/01%20-%20Consultas%20sobre%20bases%20de%20datos%20relacionales.pdf) - [Ejercicios](Material%20de%20clases/Capítulo%207/Ejercicios) - [Ticket](https://forms.gle/9KybGubTaEzuP1pv7) |
 </details>
 
 ## Notas
