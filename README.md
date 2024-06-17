@@ -77,13 +77,21 @@
 | Laboratorio | Lunes 27/05  | [Enunciado](Laboratorios/L5/L5.pdf) |
 </details>
 
-<details open>
+<details>
 <summary>Capítulo 6: Bases de datos relacionales</summary>
 
 | Instancia   | Fecha        | Recursos |
 | :-:         | :-:          | :-:      |
 | Cátedra     | Lunes 03/06  | [Slides](Material%20de%20clases/Capítulo%206/Slides/01%20-%20Bases%20de%20datos%20relacionales.pdf) - [Materia](Material%20de%20clases/Capítulo%206/Notebooks) - [Ejercicios](Material%20de%20clases/Capítulo%206/Ejercicios) - [Ticket](https://forms.gle/SRce4hrRr5q536AX6) |
 | Laboratorio | Lunes 10/06  | [Enunciado](Laboratorios/L6/L6.pdf) |
+</details>
+
+<details open>
+<summary>Capítulo 7: Consultas sobre bases de datos relacionales</summary>
+
+| Instancia   | Fecha        | Recursos |
+| :-:         | :-:          | :-:      |
+| Cátedra     | Lunes 17/06  | Slides - [Materia](Material%20de%20clases/Capítulo%207/Notebooks) - Ejercicios - [Ticket](https://forms.gle/9KybGubTaEzuP1pv7) |
 </details>
 
 ## Notas
